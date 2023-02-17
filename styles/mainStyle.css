@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --DivsBGColor: #FFE1E1
+}
+
+.body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+ul {
+    list-style: none;
+}
+
+.el {
+    background: var(--DivsBGColor);
+    box-shadow: 0 0 5px #bd9191;
+    transition: box-shadow 2s;
+}
+
+.NavBar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.Content {
+    grid-column: 3 / span 8;
+    grid-row: 2 /span 10;
+
+}
+
+.LeftPanel {
+    grid-column: 1 / span 2;
+    grid-row: 2 /span 10;
+}
+
+.RightPanel {
+    grid-column: 11 / span 2;
+    grid-row: 2 /span 10;
+}
+
+
+.Footer {
+    grid-column: 1 / span 12;
+    grid-row: 12 /span 1;
+}
+
+
+/* Flex Nav Style */
+.FlexNavItems {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.LeftSideNav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
